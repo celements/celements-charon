@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import { onMounted } from 'vue';
-import { useLayoutStore } from './stores/layoutStore';
+import { onMounted } from 'vue'
+import { useLayoutStore } from './stores/layoutStore'
 
-const layoutStore = useLayoutStore();
+const layoutStore = useLayoutStore()
 
 onMounted(() => {
-  console.log('App mounted');
-    layoutStore.initLayoutJson();
-});
+  console.log('App mounted')
+  layoutStore.initLayoutJson()
+})
 </script>
 
 <template>
