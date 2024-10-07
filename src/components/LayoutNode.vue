@@ -1,12 +1,12 @@
 <template>
-  <component :is="tagName" v-bind="props.node.attributes">
+  <component :is="tagName" v-bind="rootNode.attributes">
     <LayoutNode
-      v-for="node in props.node.subnodes"
-      v-if="props.node.subnodes.length > 0"
-      :node="node"
-    ></LayoutNode>
+      v-for="node in children"
+      :key="node.attributes?.['data-cell-ref']"
+      :root-node="node"
+    />
     <RichTextComponent
-      v-else
+      v-if="children.length == 0"
       context-doc-space="Content"
       context-doc-name="untitled1"
       :start-node-name="startNodeName"
@@ -15,15 +15,13 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
-import { type LayoutNode } from '@/stores/layoutStore.ts';
+import { type LayoutNode } from '@/stores/layoutStore';
+import { computed, defineProps } from 'vue';
 import RichTextComponent from './RichTextComponent.vue';
-import { ref } from 'vue';
 
-const props = defineProps<{
-  node: LayoutNode;
-}>();
+const props = defineProps<{ rootNode: LayoutNode }>();
 
-const tagName: string = props.node.tagName ?? 'div';
-const startNodeName = ref(props.node.content?.replace(/.*\.(.*?)$/g, '$1'));
+const tagName = computed(() => props.rootNode.tagName ?? 'div');
+const children = computed(() => props.rootNode.subnodes ?? []);
+const startNodeName = computed(() => props.rootNode.content?.replace(/.*\.(.*?)$/g, '$1'));
 </script>

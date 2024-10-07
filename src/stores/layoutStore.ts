@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 
-interface LayoutNode {
+export interface LayoutNode {
   tagName?: string;
   attributes?: Record<string, string>;
   content?: string;
