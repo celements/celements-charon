@@ -1,11 +1,19 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
+interface LayoutNode {
+  tagName?: string
+  attributes?: Record<string, string>
+  content?: string
+  subnodes?: LayoutNode[]
+}
+
+
 export const useLayoutStore = defineStore('layout', () => {
-  const layoutJson = ref<object | undefined>(undefined)
+  const layoutJson = ref<LayoutNode[] | undefined>(undefined)
 
   async function initLayoutJson() {
-    const url = 'https://bellis.celdev.sneakapeek.ch/api/v1/layouts/json/Bellis-OB-Layout'
+    const url = import.meta.env.VITE_DB_PATH + import.meta.env.VITE_API + '/json/' + import.meta.env.VITE_LAYOUT_SPACE;
     try {
       const response = await fetch(url)
       if (!response.ok) {

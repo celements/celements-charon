@@ -14,6 +14,7 @@ const props = defineProps<{
 }>()
 const html = ref('')
 const loadHtml = async (url) => {
+  if (!props.startNodeName) return;
   try {
     console.log('fetch html', url)
     const response = await fetch(url, {
