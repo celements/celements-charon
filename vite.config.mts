@@ -9,6 +9,10 @@ export default defineConfig({
   envDir: '..',
   plugins: [vue(), topLevelAwait()],
   server: {
+    proxy: {
+      '^/download': 'http://bellis.localhost:2080',
+      '^/file': 'http://bellis.localhost:2080',
+    },
     fs: {
       // Allow serving files from one level up to the project root
       allow: ['.', '../node_modules'],
