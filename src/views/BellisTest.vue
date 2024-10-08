@@ -13,7 +13,7 @@ import LayoutNode from '@/components/LayoutNode.vue';
 import { useLayoutStore } from '@/stores/layoutStore';
 import { storeToRefs } from 'pinia';
 
-const props = defineProps<{ spacename: string, docname: string }>();
+const props = defineProps<{ spacename: string; docname: string }>();
 
 const layoutStore = useLayoutStore();
 const { layoutJson } = storeToRefs(layoutStore);

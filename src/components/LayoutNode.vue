@@ -21,11 +21,11 @@ import { type LayoutNode } from '@/stores/layoutStore';
 import { computed, defineProps } from 'vue';
 import RichTextComponent from './RichTextComponent.vue';
 
-const props = defineProps<{ 
-    rootNode: LayoutNode,
-    contextDocSpace: string,
-    contextDocName: string,
-  }>();
+const props = defineProps<{
+  rootNode: LayoutNode;
+  contextDocSpace: string;
+  contextDocName: string;
+}>();
 
 const tagName = computed(() => props.rootNode.tagName ?? 'div');
 const children = computed(() => props.rootNode.subnodes ?? []);

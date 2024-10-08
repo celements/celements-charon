@@ -1,47 +1,47 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 html,
 body {
-	height: 100%;
-	margin: 0px !important;
-	padding: 0px;
+  height: 100%;
+  margin: 0px !important;
+  padding: 0px;
 }
 body.celementsmenubarvisible #page {
-	padding-top: 28px;
+  padding-top: 28px;
 }
 #sitecontainer {
-	position: relative;
-	min-height: 100%;
-	background-color: #f0f0f0;
-	background-image: url('/download/BellisLayout/WebHome/background.png');
-	background-position: center;
-	background-repeat: repeat-y;
+  position: relative;
+  min-height: 100%;
+  background-color: #f0f0f0;
+  background-image: url('/download/BellisLayout/WebHome/background.png');
+  background-position: center;
+  background-repeat: repeat-y;
 }
 #page {
-	width: 776px;
-	padding-left: 20px;
-	padding-right: 17px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 776px;
+  padding-left: 20px;
+  padding-right: 17px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #header {
-	height: 104px;
-	position: relative;
+  height: 104px;
+  position: relative;
 }
 #logo {
-	position: absolute;
-	left: 24px;
-	bottom: 24px;
-	min-height: 40px;
-	min-width: 450px;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  min-height: 40px;
+  min-width: 450px;
 }
 #teaser {
-	position: absolute;
-	top: 24px;
-	right: 24px;
-	min-height: 30px;
-	min-width: 200px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  min-height: 30px;
+  min-width: 200px;
 }
 
 #menu_point {
@@ -49,123 +49,121 @@ body.celementsmenubarvisible #page {
 }
 
 #image {
-	height: 215px;
-	overflow: hidden;
-	margin: 0px 24px;
+  height: 215px;
+  overflow: hidden;
+  margin: 0px 24px;
 }
 
 #wrapper {
-	padding: 30px 24px 59px 24px;
-	position: relative;
+  padding: 30px 24px 59px 24px;
+  position: relative;
 }
 #left {
-	float: left;
-	width: 210px;
+  float: left;
+  width: 210px;
 }
 #box {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #content {
-	width: 494px;
-	margin-left: 234px;
-	padding-top: 43px;
+  width: 494px;
+  margin-left: 234px;
+  padding-top: 43px;
 }
 #language {
-
 }
 
 #footer {
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	margin-left: -386px;
-	width: 728px;
-	height: 15px;
-	border-top: 2px solid #f4f4f4;
-	padding: 24px;
-	padding-top: 8px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -386px;
+  width: 728px;
+  height: 15px;
+  border-top: 2px solid #f4f4f4;
+  padding: 24px;
+  padding-top: 8px;
 }
-body.celementsmenubarvisible #footer div.cel_cm_pagedependent_content, 
+body.celementsmenubarvisible #footer div.cel_cm_pagedependent_content,
 body.celementsmenubarvisible #footer div.cel_cm_rte_content {
-	min-height: 15px;
+  min-height: 15px;
 }
 
 .searchbar input {
-	width: 204px;
-	max-width: 80%;
+  width: 204px;
+  max-width: 80%;
 }
-	
+
 /* Navigation */
 #nav ul,
 #menu_mobile ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 #nav ul li a,
 #menu_mobile ul li a {
-	display: block;
-	color: #505050;
-	font-size: 13px;
-	line-height: 26px;
-	font-weight: bold;
-	text-decoration: none;
-	padding: 0px 16px;
-	margin-bottom: 4px;
-	background-color: #f4f4f4;
+  display: block;
+  color: #505050;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0px 16px;
+  margin-bottom: 4px;
+  background-color: #f4f4f4;
 }
 #nav ul li li a,
 #menu_mobile ul li li a {
-	padding-left: 32px;
+  padding-left: 32px;
 }
 #nav li:hover > a,
 #nav li.active > a,
 #menu_mobile li:hover > a,
 #menu_mobile li.active > a {
-	background-color: #dddddd;
+  background-color: #dddddd;
 }
 
 /* Sprachen */
 #language ul {
-	float: right;
-	margin: 0px;
-	padding: 5px 0px 0px 0px;
-	list-style: none;
+  float: right;
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  list-style: none;
 }
 #language ul li {
-	float: left;
-	font-size: 12px;
-	line-height: 13px;
+  float: left;
+  font-size: 12px;
+  line-height: 13px;
 }
 #language ul li + li {
-	margin-left: 4px;
-	padding-left: 4px;
-	border-left: 1px solid #505050;
+  margin-left: 4px;
+  padding-left: 4px;
+  border-left: 1px solid #505050;
 }
 #language ul li a {
-	color: #999;
+  color: #999;
 }
 #language ul li a.active {
-	color: #333;
+  color: #333;
 }
 
 /* Blog */
 #content .article_date,
 #content .article_title {
-	font-size: 18px;
-	line-height: 26px;
-	margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 4px;
 }
 
 #content .article_title {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #content .article_date {
-	float: right;
-	margin-left: 8px;
+  float: right;
+  margin-left: 8px;
 }
-
 
 /* SEARCH RESULTS */
 #sitecontainer #content #websearch .results .result_page_link {

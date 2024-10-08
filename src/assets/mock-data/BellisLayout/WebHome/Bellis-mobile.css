@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 html,
 body.bellisMobile {
@@ -39,8 +39,8 @@ body.bellisMobile.celementsmenubarvisible #page {
   height: auto;
 }
 .bellisMobile #image img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #teaser {
@@ -99,13 +99,12 @@ body.bellisMobile.celementsmenubarvisible #page {
   height: auto;
 }
 
-
 /* Menu */
 .bellisMobile #menu_point {
-	display: block;
+  display: block;
   position: absolute;
   top: 17px;
-	left: 10px;
+  left: 10px;
 }
 .bellisMobile #menu_point img {
   width: 28px;
@@ -114,7 +113,7 @@ body.bellisMobile.celementsmenubarvisible #page {
 
 .bellisMobile #sitecontainer #navigation_mobile {
   display: block;
-  background-color: #D0D0D0;
+  background-color: #d0d0d0;
   height: 100%;
   width: 50%;
   z-index: 1;
@@ -130,8 +129,7 @@ body.bellisMobile.celementsmenubarvisible #page {
 .bellisMobile #sitecontainer #navigation_mobile #menu_mobile li a {
   display: block;
 }
- 
- 
+
 /* Footer */
 .bellisMobile #footer {
   display: none;

@@ -1,7 +1,7 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 body.mceContentBody {
-	width: 528px;
+  width: 528px;
 }
 
 #sitecontainer a img {
@@ -19,55 +19,55 @@ body.mceContentBody h2,
 body.mceContentBody h3,
 body.mceContentBody p,
 body.mceContentBody li {
-	margin: 0px;
-	padding: 0px;
-	font-family: "Open Sans", Tahoma,Geneva,Helvetica,Arial,sans-serif;
-	font-size: 13px;
-	line-height: 20px;
-	font-weight: normal;
-	color: #505050;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', Tahoma, Geneva, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #505050;
 }
 #sitecontainer #content ul,
 body.mceContentBody ul {
-	margin: 4px 0px 0px 0px;
-	padding: 0px 0px 0px 30px;
+  margin: 4px 0px 0px 0px;
+  padding: 0px 0px 0px 30px;
 }
 
 #sitecontainer h1,
 body.mceContentBody h1 {
-	font-size: 20px;
-	line-height: 24px;
-	margin: 18px 0px 4px 0px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 18px 0px 4px 0px;
 }
 #sitecontainer h2,
 body.mceContentBody h2 {
-	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 4px;
-	margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  margin-top: 12px;
 }
 #sitecontainer h3,
 body.mceContentBody h3 {
-	font-size: 15px;
-	line-height: 20px;
-	margin-bottom: 4px;
-	margin-top: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  margin-top: 8px;
 }
 #sitecontainer #content :first-child,
 body.mceContentBody :first-child {
-	margin-top: 0px;
+  margin-top: 0px;
 }
 
 #sitecontainer a {
-	color: #505050;
-	text-decoration: none;
+  color: #505050;
+  text-decoration: none;
 }
 #sitecontainer #content a,
 body.mceContentBody a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 #sitecontainer a:hover,
 body.mceContentBody a:hover {
-	color: #333;
-	text-decoration: underline;
+  color: #333;
+  text-decoration: underline;
 }

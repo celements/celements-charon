@@ -6,9 +6,9 @@
 import HtmlElement from '@/components/base/HtmlElement.vue';
 import { defineProps, ref } from 'vue';
 const props = defineProps<{
-  contextDocSpace: string,
-  contextDocName: string,
-  startNodeName?: string,
+  contextDocSpace: string;
+  contextDocName: string;
+  startNodeName?: string;
 }>();
 
 const html = ref('');

@@ -1,28 +1,28 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 #footer p,
 body.mceContentBody p {
-	font-size: 10px;
-	line-height: 13px;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 #footer ul,
 #footer li,
 body.mceContentBody ul,
 body.mceContentBody li {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 #footer li,
 body.mceContentBody li {
-	display: inline;
-	font-size: 10px;
-	line-height: 13px;
+  display: inline;
+  font-size: 10px;
+  line-height: 13px;
 }
 #footer li + li,
 body.mceContentBody li + li {
-	margin-left: 5px;
-	border-left: 1px solid #333333;
-	padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #333333;
+  padding-left: 5px;
 }
