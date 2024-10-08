@@ -5,19 +5,26 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/:spacename/',
-      name: 'Content',
-      alias: [''],
+      path: '/',
+      name: 'Document_Default',
+      redirect: '/Content/WebHome',
+    },
+    {
+      path: '/:val',
+      name: 'Document_Partial',
+      redirect: to => {
+        console.log(to.path);
+        if (to.path.endsWith('/')) {
+          return { path: to.path + 'WebHome' }
+        }
+        return { path: '/Content' + to.path }
+      },
+    },
+    {
+      path: '/:spacename/:docname',
+      name: 'Document',
       props: true,
-      children: [
-        {
-          path: ':docname',
-          name: 'WebHome',
-          alias: ['', '/:docname'],
-          component: LayoutView,
-          props: true,
-        },
-      ],
+      component: LayoutView,
     },
   ],
 });
