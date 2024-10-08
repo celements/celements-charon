@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+#logo h1,
+body.mceContentBody h1 {
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 40px;
+}
+
+#logo h1,
+#logo p,
+body.mceContentBody h1,
+body.mceContentBody p {
+	display: inline;
+	color: #333333;
+}
+
+#header ul,
+#header li,
+body.mceContentBody ul,
+body.mceContentBody li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#header ul,
+body.mceContentBody ul {
+	text-align: right;
+}
+#header li,
+body.mceContentBody li {
+	display: inline;
+}
+#header li + li,
+body.mceContentBody li + li {
+	margin-left: 5px;
+	border-left: 1px solid #333333;
+	padding-left: 5px;
+}

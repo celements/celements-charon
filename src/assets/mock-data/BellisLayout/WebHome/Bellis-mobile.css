@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+
+html,
+body.bellisMobile {
+  height: 100%;
+  margin: 0px !important;
+  padding: 0px;
+}
+
+#navigation_mobile,
+body.bellisMobile #celements2_menu_bar,
+body.bellisMobile #teaser {
+  display: none;
+}
+body.bellisMobile.celementsmenubarvisible #page {
+  padding-top: 0px;
+}
+
+.bellisMobile #sitecontainer {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #fff;
+  background-image: none;
+  background-position: center;
+  background-repeat: repeat-y;
+  width: 100%;
+  padding-bottom: 60px;
+}
+.bellisMobile #page {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bellisMobile #image {
+  margin: 0px 10px;
+  height: auto;
+}
+.bellisMobile #image img {
+	max-width: 100%;
+	height: auto;
+}
+
+#teaser {
+  right: 10px;
+}
+#lang,
+#nav2 {
+  margin-right: 10px;
+}
+
+.bellisMobile #logo {
+  left: 52px;
+  top: 10px;
+  bottom: auto;
+}
+.bellisMobile #logo h1 {
+  display: block;
+  margin: 0px;
+  font-size: 30px;
+}
+.bellisMobile #mobile_teaser {
+  text-align: center;
+}
+
+.bellisMobile #wrapper {
+  padding: 30px 0px 0px 0px;
+  position: relative;
+  margin-right: 40px;
+}
+.bellisMobile #left {
+  display: none;
+}
+
+.bellisMobile #left div + div {
+  margin-top: 10px;
+}
+.bellisMobile #editablecode_container #content {
+  width: 530px;
+  margin-left: 60px;
+}
+.bellisMobile .cel_cell #content {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.bellisMobile #content td img {
+  margin-right: 70px !important;
+}
+
+.bellisMobile #content .rteEndClear {
+  clear: both;
+}
+
+.smallMobileWidth img.fluidWidth {
+  width: 50% !important;
+  height: auto;
+}
+
+
+/* Menu */
+.bellisMobile #menu_point {
+	display: block;
+  position: absolute;
+  top: 17px;
+	left: 10px;
+}
+.bellisMobile #menu_point img {
+  width: 28px;
+  height: 28px;
+}
+
+.bellisMobile #sitecontainer #navigation_mobile {
+  display: block;
+  background-color: #D0D0D0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  position: absolute;
+  padding: 10px;
+}
+
+.bellisMobile .searchbar {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.bellisMobile #sitecontainer #navigation_mobile #menu_mobile li a {
+  display: block;
+}
+ 
+ 
+/* Footer */
+.bellisMobile #footer {
+  display: none;
+}
+
+/* Gallery fix */
+.bellisMobile .celements_galleries .celements_gallery_overview {
+  padding: 5px 0px 10px 0px;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}

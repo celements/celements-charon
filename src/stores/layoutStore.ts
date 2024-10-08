@@ -10,6 +10,13 @@ export interface LayoutNode {
 
 export const useLayoutStore = defineStore('layout', () => {
   const layoutJson = ref<LayoutNode[] | undefined>(undefined);
+  const cssFileStrings = ref<string[]>([
+    '/assets/mock-data/BellisLayout/WebHome/Bellis-mobile.css',
+      '/assets/mock-data/BellisLayout/WebHome/Bellis.css',
+      '/assets/mock-data/BellisLayout/WebHome/Bellis-content.css',
+      '/assets/mock-data/BellisLayout/WebHome/Bellis-footer.css',
+      '/assets/mock-data/BellisLayout/WebHome/presentation.css',
+      '/assets/mock-data/BellisLayout/WebHome/Bellis-header.css']);
 
   async function initLayoutJson() {
     const url =
@@ -28,5 +35,5 @@ export const useLayoutStore = defineStore('layout', () => {
     }
   }
 
-  return { layoutJson, initLayoutJson };
+  return { layoutJson, cssFileStrings, initLayoutJson };
 });
