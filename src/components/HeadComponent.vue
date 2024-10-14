@@ -1,12 +1,19 @@
 <template>
   <Teleport to="head">
     <link
-      v-for="fileName in layoutStore.cssFileStrings"
+      v-for="fileName in layoutStore.cssFilePaths"
       :key="fileName"
       rel="stylesheet"
       media="all"
       type="text/css"
       :href="fileName"
+    />
+    <component
+    :is="'script'"
+    v-for="fileName in layoutStore.jsFilePaths"
+    :key="fileName"
+    defer
+    :src="fileName"
     />
   </Teleport>
 </template>
@@ -15,5 +22,5 @@
 import { useLayoutStore } from '@/stores/layoutStore';
 
 const layoutStore = useLayoutStore();
-console.log('layoutStore.cssFileStrings', layoutStore.cssFileStrings);
+
 </script>
