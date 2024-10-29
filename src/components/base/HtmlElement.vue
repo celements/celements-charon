@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, onMounted, useTemplateRef, watch } from 'vue';
+import { onMounted, useTemplateRef, watch } from 'vue';
 const htmlElem = useTemplateRef('htmlElem');
 const props = defineProps<{
   html: string;
