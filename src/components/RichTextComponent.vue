@@ -4,6 +4,7 @@
 
 <script setup lang="ts">
 import HtmlElement from '@/components/base/HtmlElement.vue';
+import type { Maybe } from '@/utils/utils';
 import { defineProps, ref } from 'vue';
 const props = defineProps<{
   contextDocSpace: string;
@@ -11,7 +12,7 @@ const props = defineProps<{
   startNodeName?: string;
 }>();
 
-const html = ref('');
+const html = ref<Maybe<string>>();
 const url: string = import.meta.env.VITE_DB_PATH + import.meta.env.VITE_API + '/partial';
 const layoutSpace: string = import.meta.env.VITE_LAYOUT_SPACE;
 
